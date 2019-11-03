@@ -1,0 +1,10 @@
+diff a/techmeets_basic2/answer.html b/techmeets_basic2/answer.html	(rejected hunks)
+@@ -26,7 +26,7 @@
+   <main>
+     <section id="section01">
+       <div class="title">
+-        <h2>テキストテキストテキスト</h2>
++        <h2>あるある探検隊</h2>
+       </div>
+       
+       <div class="contents" id="div01">

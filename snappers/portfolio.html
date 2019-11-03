@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<!--レスポンシブデザインの準備-->
+<!--①viewport・・・webページの表示領域を表示する-->
+<!--②ブレイクポイント・・・表示が切り替わる地点-->
+<!--③メディアクエリ・・・画面の大きさに合わせてCSSを切り替える「ブレイクポイントの指定に使用する」-->
+<!--・link要素に記述する・・・ブレイクポイントごとに別々のCSSファイルを読み込ませる場合-->
+<!--・CSSファイルに直接記述する方法-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio | 風景写真家「SNAPPERS」</title>  
+    <!--google fontsの使用、styleheetの上に記載-->
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body id="portfolio">
+  
+<!--headerの始まり-->
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="SNAPPERS"></a> 
+    </div> 
+    <nav>
+      <ul class="global-nav">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>    
+        <li><a href="contact.html">Contact</a></li>
+      </ul>            
+    </nav>       
+  </header>
+<!--headerの終わり-->
+  
+<!--wrapの始まり--> 
+<!--コンテンツエリアのfloatプロパティによるレイアウト崩れを防ぐため、親要素となるdiv要素にclearfixのための目印をつける-->
+  <div id="wrap" class="clearfix">
+    <div class="content">     
+<!--メインエリア・・・div サイドバー・・・aside-->
+      <div class="main">
+        <h1>Portfolio</h1>
+        <p>これまでに撮影した写真や映像作品を掲載しています。</p>
+        <section>
+<!--alt="画像の説明"-->
+<!--alt属性・・・画像の代わりとなるテキスト情報のこと「代替テキスト」　万が一画像が表示されなかったとき、画像の変わりに表示-->
+<!--また、検索エンジンにコンテンツの内容を正確に伝えられるため、画像検索において上位表示を狙う場合に重要な要素-->
+<!--ユーザーにとって「利用しやすいコンテンツ」にできる。テキストの画像内容の補完、音声読み上げ機能を使用した際の読み上げテキスト-->
+<!--alt・・・「画像そのものを指し示す、画像以外には設定できない」　title・・・「補足説明、画像やテキストなど全ての要素に設定できる」-->
+<!--画像が「title,h,a」=見出しやリンクの遷移先の内容を伝えるため、必ずalt属性を記述する必要がある。
+リンクがある画像にalt属性が記述されていない場合、検索エンジンがリンク先のページを把握しずらくなってしまう。
+-->
+          <h2><a href="photograph.html"><img src="images/portfolio-photo.jpg" alt="PHOTOGRAPH"></a></h2>
+          <p>SNAPPERSでは「街―City」「海―Beach」「森―Forest」の3つの場所で、様々な角度から「人の気配」を撮影します。人が写っていない写真の中にも確かにそこにある、人の気配を感じとって頂けると嬉しいです。<a href="photograph.html">詳しくみる ≫</a></p>
+        </section>
+        <section>
+          <h2><a href="video.html"><img src="images/portfolio-video.jpg"></a></h2>
+          <p>SNAPPERSでは映像作品も撮影しております。ドローンでの空撮やアクションカメラを使用した、屋外でのダイナミックな映像を得意としています。またショートフィルムを映画祭などで上映することもあります。<a href="bideo.html">詳しくみる　≫</a></p>
+        </section>
+      </div>
+      <aside class="sidebar">
+<!--サイドバーのメニュー「ページ内リンク」-->
+        <section>
+          <h2>Photograph</h2>
+          <ul>
+            <li><a href="photograph.html#city">街―City</a></li>
+            <li><a href="photograph.html#beach">海―Beach</a></li>
+            <li><a href="photograph.html#forest">森―Forest</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Video</h2>
+            <ul>
+              <li><a href="video.html#movie">Movie</a></li>
+              <li><a href="video.html#short-film">Short film</a></li>
+            </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+<!--wrapの終わり-->
+  
+<!--footerの始まり-->
+  <footer>
+    <small>(C)2017 Hattori-studio.</small>
+  </footer>
+<!--footerの終わり-->
+  
+</body>
+</html>
+
